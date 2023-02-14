@@ -1,0 +1,8 @@
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+    
+- name: Copy nginx files
+  template: "src=nginx.conf dest=/etc/nginx/sites-enabled/{{ php_base_name }}.conf"
+  notify: Restart Nginx
