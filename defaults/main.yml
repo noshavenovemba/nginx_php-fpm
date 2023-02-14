@@ -1,0 +1,13 @@
+my_name: my_server
+
+server_name: {{ my_name }}
+
+domain_name: local
+
+ssl_keys: "{{  }}"
+
+enable_https: no
+
+generate_ssl_certs: 
+
+phpsocket: "/var/run/php-fpm-{{ my_name }}.sock"
