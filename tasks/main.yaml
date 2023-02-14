@@ -1,0 +1,4 @@
+- block:
+  - include: nginx.yml
+
+  - include: php-fpm.yml
